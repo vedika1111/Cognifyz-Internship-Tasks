@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Button Color Change</title>
+    <style>
+        #colButton {
+            display: block;
+            padding: 20px 40px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            background-color: red; /* Initial color */
+            color: rgb(10, 4, 4);
+        }
+    </style>
+</head>
+<body>
+    <h1>Button Color Changer using Javascript</h1>
+    <button id="colButton" onclick="ColorChange()">Click Here !!!!</button>
+    <script>
+        function ColorChange() {
+            var button = document.getElementById("colButton");
+            var currColor = button.style.backgroundColor;
+            if (currColor === 'red') {
+                button.style.backgroundColor = 'yellow';
+            } 
+            else {
+                button.style.backgroundColor = 'red';
+            }
+        }
+    </script>
+</body>
+</html>

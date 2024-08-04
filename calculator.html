@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator for Addition</title>
+</head>
+<body>
+    <h1>CALCULATOR FOR ADDITION PURPOSE</h1>
+    <label num="num1">Enter first number:</label>
+    <input type="number" id="num1"><br><br>
+
+    <label num="num2">Enter second number:</label>
+    <input type="number" id="num2"><br><br>
+
+    <button onclick="addNumbers()">Add</button><br><br>
+
+    <div id="result"></div>
+
+    <script>
+        function addNumbers() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var result = num1 + num2;
+            document.getElementById("result").innerText = "Result: " + result;
+        }
+    </script>
+</body>
+</html>

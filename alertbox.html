@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Greeting Message using Alert Box</title>
+    <script>
+        function GreetingsMsg() {
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+            var greeting;
+
+            if (hours < 12) {
+                greeting = "Good morning!";
+            } else if (hours < 18) {
+                greeting = "Good afternoon!";
+            } else if (hours < 22) {
+                greeting = "Good evening!";
+            } else {
+                greeting = "Good night!";
+            }
+             
+            alert(greeting + "\nCurrent time is: " + hours + ":" + minutes + ":" + seconds);
+        }
+    </script>
+    <h1>Alert Box For Greetings Message</h1>
+</head>
+<body onload="GreetingsMsg()">
+</body>
+</html>
